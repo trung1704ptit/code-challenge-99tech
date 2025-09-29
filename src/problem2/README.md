@@ -4,13 +4,10 @@ A modern, responsive currency swap interface built with React, TypeScript, and T
 
 ## Features
 
-- 🎨 **Modern UI**: Beautiful glass morphism design with custom background
-- 📱 **Responsive**: Optimized for both desktop and mobile devices
-- 💱 **Real-time Exchange**: Live price calculations using Switcheo API
-- 🪙 **Token Icons**: Official token icons from Switcheo repository
-- ✅ **Input Validation**: Comprehensive validation with user-friendly error messages
-- ♿ **Accessible**: ARIA labels and keyboard navigation support
-- 🎯 **TypeScript**: Full type safety and IntelliSense support
+- **Responsive**: Optimized for both desktop and mobile devices
+- **Token Icons**: Official token icons from Switcheo repository
+- **Input Validation**: Comprehensive validation with user-friendly error messages
+- **TypeScript**: Full type safety and IntelliSense support
 
 ## Screenshot
 
