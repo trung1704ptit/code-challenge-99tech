@@ -13,7 +13,6 @@ describe('Prices Service - Simple Tests', () => {
     expect(pricesModule.pricesService).toBeDefined();
     expect(pricesModule.pricesService.getPrices).toBeDefined();
     expect(pricesModule.pricesService.getLatestPrice).toBeDefined();
-    expect(pricesModule.pricesService.getAveragePrice).toBeDefined();
   });
 
   it('should have all required service methods', async () => {
@@ -22,7 +21,6 @@ describe('Prices Service - Simple Tests', () => {
     expect(typeof pricesService.getPrices).toBe('function');
     expect(typeof pricesService.getPricesByCurrency).toBe('function');
     expect(typeof pricesService.getLatestPrice).toBe('function');
-    expect(typeof pricesService.getAveragePrice).toBe('function');
   });
 
   it('should handle getPrices method signature', async () => {
@@ -37,12 +35,5 @@ describe('Prices Service - Simple Tests', () => {
     
     // Test that the method exists and can be called with a currency parameter
     expect(() => pricesService.getLatestPrice('ETH')).not.toThrow();
-  });
-
-  it('should handle getAveragePrice method signature', async () => {
-    const { pricesService } = await import('../prices');
-    
-    // Test that the method exists and can be called with a currency parameter
-    expect(() => pricesService.getAveragePrice('ETH')).not.toThrow();
   });
 });

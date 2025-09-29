@@ -43,19 +43,5 @@ export const pricesService = {
       console.error(`Failed to fetch latest price for ${currency}:`, error);
       throw error;
     }
-  },
-
-  // Get average price for a currency
-  async getAveragePrice(currency: string): Promise<number | null> {
-    try {
-      const prices = await this.getPricesByCurrency(currency);
-      if (prices.length === 0) return null;
-      
-      const sum = prices.reduce((total, price) => total + price.price, 0);
-      return sum / prices.length;
-    } catch (error) {
-      console.error(`Failed to calculate average price for ${currency}:`, error);
-      throw error;
-    }
   }
 };
